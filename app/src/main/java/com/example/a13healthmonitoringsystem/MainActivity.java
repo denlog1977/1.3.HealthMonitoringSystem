@@ -25,11 +25,12 @@ public class MainActivity extends AppCompatActivity {
                 @Override
                 public void onClick(View v) {
                     int age = 0;
+                    int maxAge = 150;
                     boolean success = false;
                     try {
                         age = Integer.parseInt(editTextAge.getText().toString());
-                        if (age > 100 || age < 1){
-                            Toast.makeText(MainActivity.this, "Введите число от 1 до 100", Toast.LENGTH_LONG).show();
+                        if (age > maxAge || age < 1){
+                            Toast.makeText(MainActivity.this, "Введите число от 1 до " + maxAge, Toast.LENGTH_LONG).show();
                         } else {
                             success = true;
                         }
@@ -40,7 +41,8 @@ public class MainActivity extends AppCompatActivity {
                         Patient patient = new Patient(editTextFIO.getText().toString(), age);
                         Toast.makeText(MainActivity.this, patient.toString(), Toast.LENGTH_LONG).show();
                     } else {
-                        editTextAge.setText("Введите число от 1 до 100");
+                        //editTextAge.setText("Введите число от 1 до 100");
+                        editTextAge.setText("");
                     }
                 }
             }

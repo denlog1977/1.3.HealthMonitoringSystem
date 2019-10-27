@@ -10,5 +10,15 @@
 
     <string name="textViewPressure">Показатели давления</string>
     <string name="textViewHealthIndicator">Показатели здоровья</string>
+    <string name="inputFIO">Введите ваше ФИО</string>
+    <string name="inputAge">Введите ваш возраст</string>
+    <string name="inputUpPressure">Введите верхнее давление</string>
+    <string name="inputDownPressure">Введите нижнее давление</string>
+    <string name="inputPulse">Введите пусль</string>
+    <string name="inputDate">Введите дату измерений</string>
+    <string name="inputWeight">Введите ваш вес в кг</string>
+    <string name="inputSteps">Введите количество шагов</string>
+
+
 
 </resources>
