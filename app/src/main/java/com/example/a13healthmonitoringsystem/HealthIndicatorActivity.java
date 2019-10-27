@@ -3,12 +3,15 @@ package com.example.a13healthmonitoringsystem;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
 public class HealthIndicatorActivity extends AppCompatActivity {
+
+    private static final String TAG = "---DEN--- Health monitoring system";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,9 +55,11 @@ public class HealthIndicatorActivity extends AppCompatActivity {
             if (inputDouble <= max && inputDouble >= min){
                 result = true;
             } else {
+                Log.e(TAG, "Введено " + messageText);
                 Toast.makeText(HealthIndicatorActivity.this, messageText + " Введите число от " + min + " до " + max, Toast.LENGTH_LONG).show();
             }
         } catch (Exception e) {
+            Log.e(TAG, "Введено " + messageText);
             Toast.makeText(HealthIndicatorActivity.this, "Введите число от " + min + " до " + max, Toast.LENGTH_LONG).show();
         }
         return result;
@@ -67,9 +72,11 @@ public class HealthIndicatorActivity extends AppCompatActivity {
             if (inputInt <= max && inputInt >= min){
                 result = true;
             } else {
+                Log.e(TAG, "Введено " + messageText);
                 Toast.makeText(HealthIndicatorActivity.this, messageText + " Введите число от " + min + " до " + max, Toast.LENGTH_LONG).show();
             }
         } catch (Exception e) {
+            Log.e(TAG, "Введено " + messageText);
             Toast.makeText(HealthIndicatorActivity.this, "Введите число от " + min + " до " + max, Toast.LENGTH_LONG).show();
         }
         return result;

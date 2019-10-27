@@ -3,6 +3,7 @@ package com.example.a13healthmonitoringsystem;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
@@ -16,6 +17,8 @@ import java.time.LocalDate;
 import java.util.Date;
 
 public class PressureActivity extends AppCompatActivity {
+
+    private static final String TAG = "---DEN--- Health monitoring system";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,6 +54,8 @@ public class PressureActivity extends AppCompatActivity {
                                                   Pressure pressure = new Pressure(upPressure, downPressure, pulse, tachycardia, date);
                                                   Toast.makeText(PressureActivity.this, pressure.toString(), Toast.LENGTH_LONG).show();
                                               } else {
+                                                  Log.e(TAG, "Введено некорректное занчение на экране  !!! ");
+
                                                   //Toast.makeText(PressureActivity.this, pressure.toString(), Toast.LENGTH_LONG).show();
                                                   //editTextAge.setText("");
                                               }
@@ -68,6 +73,7 @@ public class PressureActivity extends AppCompatActivity {
             if (inputInt <= max && inputInt >= min){
                 result = true;
             } else {
+                Log.e(TAG, "Введено " + messageText);
                 Toast.makeText(PressureActivity.this, messageText + " Введите число от " + min + " до " + max, Toast.LENGTH_LONG).show();
             }
         } catch (Exception e) {
