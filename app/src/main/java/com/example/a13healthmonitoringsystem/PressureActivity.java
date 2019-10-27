@@ -18,7 +18,7 @@ import java.util.Date;
 
 public class PressureActivity extends AppCompatActivity {
 
-    private static final String TAG = "---DEN--- Health monitoring system";
+    private static final String TAG = "---DEN--- Health monitoring system --- 2019";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
