@@ -54,7 +54,7 @@ public class PressureActivity extends AppCompatActivity {
                                                   Pressure pressure = new Pressure(upPressure, downPressure, pulse, tachycardia, date);
                                                   Toast.makeText(PressureActivity.this, pressure.toString(), Toast.LENGTH_LONG).show();
                                               } else {
-                                                  Log.e(TAG, "Введено некорректное занчение на экране  !!! ");
+                                                  Log.e(TAG, "Введено некорректное занчение на экране  PressureActivity !!! ");
 
                                                   //Toast.makeText(PressureActivity.this, pressure.toString(), Toast.LENGTH_LONG).show();
                                                   //editTextAge.setText("");

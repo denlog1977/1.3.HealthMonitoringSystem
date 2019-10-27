@@ -40,6 +40,7 @@ public class HealthIndicatorActivity extends AppCompatActivity {
                                                           HealthIndicator healthIndicator = new HealthIndicator(weight, steps);
                                                           Toast.makeText(HealthIndicatorActivity.this, healthIndicator.toString(), Toast.LENGTH_LONG).show();
                                                       } else {
+                                                          Log.e(TAG, "Введено некорректное занчение на экране  HealthIndicatorActivity !!! ");
                                                           //Toast.makeText(PressureActivity.this, pressure.toString(), Toast.LENGTH_LONG).show();
                                                           //editTextAge.setText("");
                                                       }

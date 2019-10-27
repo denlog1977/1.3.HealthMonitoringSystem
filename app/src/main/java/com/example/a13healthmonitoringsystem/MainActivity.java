@@ -50,6 +50,7 @@ public class MainActivity extends AppCompatActivity {
                         Patient patient = new Patient(editTextFIO.getText().toString(), age);
                         Toast.makeText(MainActivity.this, patient.toString(), Toast.LENGTH_LONG).show();
                     } else {
+                        Log.e(TAG, "Введено некорректное значение на экране MainActivity ");
                         //editTextAge.setText("Введите число от 1 до 100");
                         editTextAge.setText("");
                     }
