@@ -13,7 +13,7 @@ public class HealthIndicator {
     @Override
     public String toString() {
         return "Показатели здоровья: " +
-                "Вес " + weight +
-                ", Шаги " + steps;
+                "вес " + weight +
+                ", шаги " + steps;
     }
 }
