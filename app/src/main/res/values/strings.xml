@@ -14,10 +14,12 @@
     <string name="inputAge">Введите ваш возраст</string>
     <string name="inputUpPressure">Введите верхнее давление</string>
     <string name="inputDownPressure">Введите нижнее давление</string>
-    <string name="inputPulse">Введите пусль</string>
+    <string name="inputPulse">Введите пульс</string>
+    <string name="inputTachycardia">Тахикардия</string>
     <string name="inputDate">Введите дату измерений</string>
     <string name="inputWeight">Введите ваш вес в кг</string>
     <string name="inputSteps">Введите количество шагов</string>
+
 
 
 
